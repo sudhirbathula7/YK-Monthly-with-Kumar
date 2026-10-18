@@ -34,11 +34,7 @@ REPOSITORY_SCHEMA_PATH = (
     / "schema_version.json"
 )
 
-DAILY_OUTPUT_ROOT = (
-    PROJECT_ROOT
-    / "output"
-    / "daily"
-)
+YEARLY_OUTPUT_ROOT = PROJECT_ROOT / "output"
 
 INPUT_DATA_PATH = (
     PROJECT_ROOT
@@ -75,7 +71,7 @@ def ensure_repository_structure() -> None:
         exist_ok=True,
     )
 
-    DAILY_OUTPUT_ROOT.mkdir(
+    YEARLY_OUTPUT_ROOT.mkdir(
         parents=True,
         exist_ok=True,
     )
@@ -234,52 +230,33 @@ def calculate_content_hash(
 # DAILY ARCHIVE
 # ============================================================
 
-def build_daily_archive_directory(
-    metadata: PublicationMetadata,
-) -> Path:
-    # Monthly publications may supply a month and year without a day.
-    # Use day 1 solely for archive folder naming in that case.
-    try:
-        parsed_date = datetime.strptime(
-            metadata.publication_date.strip(),
-            "%d %B %Y",
+def build_yearly_archive_directory(metadata: PublicationMetadata) -> Path:
+    """Archive under output/<magazine>/<year>/, without month folders."""
+    edition = metadata.edition_code.strip().upper()
+    if edition.startswith("UAK-YMA-"):
+        magazine = "Yojana"
+    elif edition.startswith("UAK-KMA-"):
+        magazine = "Kurukshetra"
+    else:
+        raise ValueError(
+            f"Cannot identify Yojana/Kurukshetra from edition code {edition!r}. "
+            "Expected UAK-YMA-YYMM or UAK-KMA-YYMM."
         )
-    except ValueError:
-        parsed_date = datetime.strptime(
-            metadata.publication_date.strip(),
-            "%B %Y",
-        )
-
-    folder_name = parsed_date.strftime(
-        "%d-%m-%Y"
-    )
-
-    archive_directory = (
-        DAILY_OUTPUT_ROOT
-        / folder_name
-    )
-
-    archive_directory.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
+    suffix = edition.rsplit("-", 1)[-1]
+    if len(suffix) != 4 or not suffix.isdigit() or not 1 <= int(suffix[2:]) <= 12:
+        raise ValueError(f"Invalid YYMM in edition code: {edition!r}")
+    year = str(2000 + int(suffix[:2]))
+    archive_directory = YEARLY_OUTPUT_ROOT / magazine / year
+    archive_directory.mkdir(parents=True, exist_ok=True)
     return archive_directory
 
 
-def archive_source_files(
-    archive_directory: Path,
-) -> None:
+def archive_source_files(archive_directory: Path, edition_code: str) -> None:
     _copy_required_file(
-        INPUT_DATA_PATH,
-        archive_directory
-        / "INPUT_DATA.txt",
+        INPUT_DATA_PATH, archive_directory / f"{edition_code}_INPUT_DATA.txt"
     )
-
     _copy_required_file(
-        INPUT_JSON_PATH,
-        archive_directory
-        / "INPUT.json",
+        INPUT_JSON_PATH, archive_directory / f"{edition_code}_INPUT.json"
     )
 
 
@@ -288,30 +265,11 @@ def archive_generated_pdfs(
     standard_pdf: Path,
     pro_pdf: Path,
 ) -> tuple[Path, Path]:
-    standard_destination = (
-        archive_directory
-        / standard_pdf.name
-    )
-
-    pro_destination = (
-        archive_directory
-        / pro_pdf.name
-    )
-
-    _copy_required_file(
-        standard_pdf,
-        standard_destination,
-    )
-
-    _copy_required_file(
-        pro_pdf,
-        pro_destination,
-    )
-
-    return (
-        standard_destination,
-        pro_destination,
-    )
+    standard_destination = archive_directory / standard_pdf.name
+    pro_destination = archive_directory / pro_pdf.name
+    _copy_required_file(standard_pdf, standard_destination)
+    _copy_required_file(pro_pdf, pro_destination)
+    return standard_destination, pro_destination
 
 
 # ============================================================
@@ -722,7 +680,7 @@ def write_production_manifest(
 ) -> Path:
     manifest_path = (
         archive_directory
-        / "output_manifest.json"
+        / f"{metadata.edition_code}_output_manifest.json"
     )
 
     manifest = {
@@ -757,7 +715,7 @@ def write_production_manifest(
             ),
         },
         "repository_updated": True,
-        "daily_archive_created": True,
+        "yearly_archive_created": True,
         "created_at": (
             datetime.now()
             .isoformat(
@@ -784,12 +742,12 @@ def write_production_summary(
 ) -> Path:
     summary_path = (
         archive_directory
-        / "production_summary.txt"
+        / f"{metadata.edition_code}_production_summary.txt"
     )
 
     lines = [
         "=" * 72,
-        "UPSC ISSUES BY KUMAR — PRODUCTION SUMMARY",
+        "UPSC ANCHOR WITH KUMAR — MONTHLY PRODUCTION SUMMARY",
         "=" * 72,
         "",
         (
@@ -826,7 +784,7 @@ def write_production_summary(
                 f"{pro_pdf.name}"
             ),
             "Repository       : Updated",
-            "Daily Archive    : Created",
+            "Yearly Archive   : Created",
         ]
     )
 
@@ -865,13 +823,13 @@ def complete_repository_and_archive(
     ensure_repository_structure()
 
     archive_directory = (
-        build_daily_archive_directory(
+        build_yearly_archive_directory(
             metadata
         )
     )
 
     archive_source_files(
-        archive_directory
+        archive_directory, metadata.edition_code
     )
 
     (

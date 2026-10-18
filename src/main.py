@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import os
 import time
-from datetime import datetime
 from pathlib import Path
 
 from src.config import PREVIEW_PATH
@@ -43,41 +42,12 @@ def open_generated_file(
 # OUTPUT FILENAMES
 # ============================================================
 
-def build_output_filenames(
-    publication_date_iso: str,
-) -> tuple[str, str]:
-    """
-    Build output filenames from the publication date.
-
-    Example:
-        2026-08-05
-
-    Outputs:
-        uak_260805_pdf.pdf
-        uak_260805_pro_pdf.pdf
-    """
-
-    parsed_date = datetime.strptime(
-        publication_date_iso,
-        "%Y-%m-%d",
-    )
-
-    compact_date = parsed_date.strftime(
-        "%y%m%d"
-    )
-
-    standard_filename = (
-        f"uak_{compact_date}_pdf.pdf"
-    )
-
-    pro_filename = (
-        f"uak_{compact_date}_pro_pdf.pdf"
-    )
-
-    return (
-        standard_filename,
-        pro_filename,
-    )
+def build_output_filenames(edition_code: str) -> tuple[str, str]:
+    """Use the publication edition ID for both monthly PDF filenames."""
+    edition_id = edition_code.strip()
+    if not edition_id or "/" in edition_id or chr(92) in edition_id:
+        raise ValueError(f"Invalid edition code for output filename: {edition_code!r}")
+    return f"{edition_id}_pdf.pdf", f"{edition_id}_pro_pdf.pdf"
 
 
 # ============================================================
@@ -106,7 +76,7 @@ def main() -> None:
         standard_pdf_filename,
         pro_pdf_filename,
     ) = build_output_filenames(
-        metadata.publication_date_iso
+        metadata.edition_code
     )
 
     # ========================================================
@@ -168,7 +138,7 @@ def main() -> None:
     print("=" * 60)
 
     # ========================================================
-    # REPOSITORY + DAILY ARCHIVE
+    # REPOSITORY + YEARLY MAGAZINE ARCHIVE
     # ========================================================
 
     elapsed_seconds = (
