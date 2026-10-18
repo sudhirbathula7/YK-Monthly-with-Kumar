@@ -1,0 +1,403 @@
+ISSUE MONTH
+
+October 2026
+
+MAGAZINE
+
+Yojana
+
+TOPIC 1
+
+ISSUE TITLE
+
+How Ayushman Bharat Connects Healthcare
+
+RATING
+
+High
+
+GS MAPPING
+
+GS II - Health, Social Justice and Government Welfare Programmes
+
+ARTICLE SOURCE TITLE
+
+Ayushman Bharat: Reimagining Health
+
+ARTICLE PAGE REFERENCE
+
+43-46
+
+TODAY'S QUESTION
+
+How does Ayushman Bharat help people get healthcare without facing heavy financial burdens?
+
+KNOWLEDGE POINT 1
+
+Protection From Hospital Bills
+
+AB-PMJAY helps eligible families pay for major hospital treatment. Its cashless cover reduces the risk that serious illness will consume savings or push households into debt.
+
+KNOWLEDGE POINT 2
+
+Care Near Home
+
+Ayushman Arogya Mandirs bring primary healthcare closer to communities. People can seek everyday care locally instead of depending only on large hospitals for health services.
+
+KNOWLEDGE POINT 3
+
+Stronger Public Facilities
+
+PM-ABHIM supports hospitals, critical care and disease monitoring. Better health infrastructure strengthens the system that people depend on when serious illness or public health threats arise.
+
+KNOWLEDGE POINT 4
+
+Connected Health Records
+
+The Ayushman Bharat Digital Mission helps patients securely share health records with their consent. Doctors at different facilities can access relevant information and provide more coordinated care.
+
+KNOWLEDGE POINT 5
+
+Care Across State Borders
+
+AB-PMJAY allows eligible patients to receive cashless treatment at participating hospitals outside their home State. This helps migrant families and people seeking specialised care elsewhere.
+
+QUICK FACTS
+
+
+AB-PMJAY provides Rs 5 lakh per eligible family annually for secondary and tertiary hospitalisation. Unlike care centres, it covers hospital treatment; over 13 crore admissions were authorised.
+
+Over 1.8 lakh Ayushman Arogya Mandirs offer nearby primary care. PM-ABHIM, launched in 2021 with Rs 64,180 crore, strengthens critical care and disease surveillance infrastructure.
+
+The National Health Authority sets standards and IT platforms, while State Health Agencies manage hospital empanelment and claims. ABHA enables consent-based health record sharing.
+
+Ayushman Vay Vandana covers people aged 70 and above regardless of income. Insurance coverage rose from 15% to over 50%; 97 crore ABHA numbers were reported.
+
+KEY TAKEAWAY
+
+Ayushman Bharat links hospital insurance, nearby primary care, stronger public facilities and digital health records, while cross-State treatment access helps reduce financial hardship and improve healthcare access.
+
+MAINS QUESTION
+
+What governance challenges must Ayushman Bharat address to deliver trustworthy healthcare across India?
+
+MAINS ANSWER
+
+Ayushman Bharat serves a large and diverse population. Its success depends not only on expanding coverage but also on maintaining reliable services and public trust.
+
+The National Health Authority sets common standards and manages digital platforms, while State Health Agencies oversee hospitals and claims locally. This division supports local needs but requires strong coordination. Treatment packages must be updated so hospital payments remain realistic. Fraud checks, data analysis and action against hospitals that break rules are needed to protect patients and public funds. Digital claims systems can improve speed and transparency. The digital mission also creates responsibilities: patients must control the sharing of their records, and privacy needs protection. Verified provider directories, shared medical terminology and connected records can reduce fragmentation. Finally, service quality and access must improve as the scheme reaches older people, frontline workers and patients travelling between States.
+
+The article therefore points to a continuing task: combine wider protection with accountable administration, safe health information and better care so coverage becomes meaningful for patients.
+
+DAILY MCQ 1
+
+A worker needs hospital treatment in another State. Which Ayushman Bharat feature helps?
+
+A. Treatment is limited to the home State.
+B. Portability permits treatment at empanelled hospitals across States.
+C. Digital records replace hospital treatment.
+D. Primary care centres pay every hospital bill.
+
+Correct Answer: B
+
+Explanation: B permits treatment across States. A wrongly restricts access. C mistakes records for treatment. D confuses primary care with hospital insurance.
+
+DAILY MCQ 2
+
+A hospital needs to share test results with another provider. Which approach follows digital health principles?
+
+A. Share records without informing the patient.
+B. Avoid digital records because sharing is impossible.
+C. Share connected records with patient consent.
+D. Assume an ABHA number makes treatment free.
+
+Correct Answer: C
+
+Explanation: C enables consent-based sharing. A ignores consent. B wrongly denies digital exchange. D mistakes health identification for insurance.
+
+PRO MAINS QUESTION 1
+
+How does Ayushman Bharat combine financial protection and access to healthcare?
+
+PRO MAINS ANSWER 1
+
+Ayushman Bharat connects financial protection with local healthcare, public facilities and digital records to improve patient access.
+
+AB-PMJAY provides eligible families cashless hospitalisation cover, protecting savings from medical bills. Portability permits treatment at empanelled hospitals across states. Ayushman Arogya Mandirs offer primary care closer to home, reducing dependence on large hospitals for routine needs. PM-ABHIM strengthens critical care and disease surveillance. The Ayushman Bharat Digital Mission allows consent-based sharing of health records between providers. These components serve needs without replacing one another.
+
+Together, insurance, services, infrastructure and secure information sharing can make healthcare accessible and reduce financial hardship throughout care.
+
+PRO MAINS QUESTION 2
+
+What administrative and digital safeguards are needed for reliable Ayushman Bharat services?
+
+PRO MAINS ANSWER 2
+
+Reliable Ayushman Bharat services require coordinated administration, accountable hospitals and protection of patients' digital health information.
+
+The National Health Authority establishes common standards, while State Health Agencies manage hospital empanelment and claims. Coordination supports implementation. Hospital payment packages need periodic updates for realistic costs. Poor payments can weaken service quality. Fraud checks, claims analysis help safeguard patients and public funds. Digital claims systems can improve transparency and processing, with supervision. Digital systems create privacy responsibilities. Patients should control the sharing of their records. Verified provider directories, shared medical terminology and connected records can help reduce fragmentation. ABHA supports digital health identification; it should not be confused with a promise of free hospital treatment. Services must also remain accessible to eligible patients seeking treatment across State borders. Expanded coverage for people aged 70 and above adds importance to dependable access. Governance must link national standards, local oversight and patient care.
+
+Ayushman Bharat therefore needs both broader protection and stronger accountability. Effective coordination, realistic payments, trustworthy digital systems and consistent hospital services are essential to maintaining public confidence through effective public oversight.
+
+PRO MCQ 1
+
+An eligible patient seeks cashless hospital care outside the home State. What enables this?
+
+A. Hospitalisation is restricted to the home State.
+B. AB-PMJAY portability at empanelled hospitals.
+C. ABHA replaces hospital insurance.
+D. Primary care centres pay all hospital bills.
+
+Correct Answer: B
+
+Explanation: AB-PMJAY portability allows eligible patients to use empanelled hospitals across States.
+
+PRO MCQ 2
+
+What is required when digital health records are shared between providers?
+
+A. Automatic sharing without patient knowledge.
+B. Replacing treatment with an ABHA number.
+C. Patient consent for record sharing.
+D. Eliminating all provider verification.
+
+Correct Answer: C
+
+Explanation: The digital mission supports consent-based sharing of patient health records.
+
+PRO MCQ 3
+
+Which institution manages hospital empanelment and claims at the State level?
+
+A. State Health Agencies.
+B. Ayushman Arogya Mandirs.
+C. National Solar Mission.
+D. Individual patients.
+
+Correct Answer: A
+
+Explanation: State Health Agencies oversee empanelment and claims, while the National Health Authority sets common standards.
+
+PRO MCQ 4
+
+Which programme strengthens critical care and disease surveillance infrastructure?
+
+A. ABHA.
+B. Ayushman Vay Vandana.
+C. Mission LiFE.
+D. PM-ABHIM.
+
+Correct Answer: D
+
+Explanation: PM-ABHIM supports critical care facilities and public health surveillance infrastructure.
+
+PRO MCQ 5
+
+Who is covered by the Ayushman Vay Vandana provision described in the topic?
+
+A. Only children.
+B. People aged 70 and above regardless of income.
+C. Only patients travelling abroad.
+D. Only government employees.
+
+Correct Answer: B
+
+Explanation: The provision extends coverage to people aged 70 and above irrespective of income.
+
+TOPIC 2
+
+ISSUE TITLE
+
+India's Path to Green Growth
+
+RATING
+
+High
+
+GS MAPPING
+
+GS III - Environment, Climate Change, Energy and Sustainable Development
+
+ARTICLE SOURCE TITLE
+
+India's Green Transformation
+
+ARTICLE PAGE REFERENCE
+
+47-50
+
+TODAY'S QUESTION
+
+How can India grow its economy while protecting the environment and using resources wisely?
+
+KNOWLEDGE POINT 1
+
+Cleaner Energy Sources
+
+Solar and other renewable power can support growing energy needs while reducing dependence on more polluting sources. The article links this shift with new investment and manufacturing opportunities.
+
+KNOWLEDGE POINT 2
+
+Using Less Energy
+
+Efficient lights, buildings and industries deliver useful services with less energy. This lowers waste and emissions while allowing homes and businesses to use resources more productively.
+
+KNOWLEDGE POINT 3
+
+Cleaner Industrial Production
+
+Green hydrogen can help industries such as steel and fertilisers reduce emissions. Building this sector can also create work in equipment, renewable power, storage and transport.
+
+KNOWLEDGE POINT 4
+
+Saving Water And Materials
+
+Water reuse, efficient irrigation and recycling reduce pressure on limited resources. A circular economy keeps materials useful longer instead of treating them only as waste.
+
+KNOWLEDGE POINT 5
+
+Resilient Cities And Communities
+
+Better public transport, green buildings and urban wetlands can improve city life. Planning for floods, heat and water shortages also helps protect development from climate risks.
+
+QUICK FACTS
+
+
+The National Solar Mission began in 2010 to advance solar energy. The PLI scheme supports domestic manufacturing of high-efficiency solar photovoltaic modules.
+
+PAT targets energy-intensive industries, while the Energy Conservation Building Code and Eco Niwas Samhita address buildings. Efficient lighting also helps reduce energy demand.
+
+The National Green Hydrogen Mission targets 5 million metric tonnes annually by 2030, supported by approximately 125 GW renewable capacity and Rs 19,744 crore.
+
+Extended Producer Responsibility addresses plastics and electronic waste, including recycling. Mission LiFE promotes responsible mobility, while adaptation includes early warnings, resilient agriculture and water security.
+
+KEY TAKEAWAY
+
+India can pursue green growth through renewable energy, efficiency, cleaner industry, recycling and climate-resilient cities, supporting economic development while reducing environmental harm.
+
+MAINS QUESTION
+
+What implementation challenges must India overcome to make green growth affordable and effective?
+
+MAINS ANSWER
+
+Green growth requires more than announcing environmental targets. The article stresses that policies must become practical, affordable solutions across industries, cities and communities.
+
+Green hydrogen needs competitive production costs, buyers, infrastructure and clear standards before it can transform difficult industrial sectors. Water management requires treatment, reuse, groundwater recharge and local monitoring rather than only increasing supply. A circular economy needs markets for recycled materials, recovery facilities and stronger links with informal recyclers. Cities must coordinate transport, buildings, waste, energy and water systems. Climate adaptation also matters because heatwaves, floods and changing rainfall threaten livelihoods and infrastructure. Financing is another challenge: environmental goals need investment that supports innovation and long-term growth. Governments, businesses, financial institutions, researchers and citizens must coordinate their efforts, measure results and keep technologies accessible across regions and communities.
+
+The article's central implementation lesson is to join finance, planning, monitoring and public participation. Green solutions will succeed more widely when they are affordable and useful in everyday development.
+
+DAILY MCQ 1
+
+A growing city faces floods, heat and resource pressure. Which plan supports green transformation?
+
+A. Build roads without improving water or waste systems.
+B. Plant trees without improving city services.
+C. Combine efficient transport, water management and infrastructure.
+D. Stop construction without improving existing infrastructure.
+
+Correct Answer: C
+
+Explanation: C supports growth and climate resilience. A neglects water and waste. B addresses only trees. D halts construction without improving infrastructure.
+
+DAILY MCQ 2
+
+A manufacturer wants to recover value from waste. Which approach best supports this?
+
+A. Send all discarded products for disposal.
+B. Expand recycling and producer responsibility.
+C. Use more raw materials without tracking waste.
+D. Keep recycling separate from industrial markets.
+
+Correct Answer: B
+
+Explanation: B supports material recovery and producer responsibility. A discards reusable resources. C increases resource use. D disconnects recycling from markets.
+
+PRO MAINS QUESTION 1
+
+How can clean energy and energy efficiency support India's green growth?
+
+PRO MAINS ANSWER 1
+
+India's green growth depends on expanding clean energy and reducing energy waste alongside development.
+
+Renewables can meet demand with less pollution. The National Solar Mission encourages solar power; PLI supports photovoltaic manufacturing. Energy efficiency complements cleaner supply by lowering demand in buildings. PAT addresses energy-intensive industries; building codes, Eco Niwas Samhita and efficient lighting improve energy use. Green hydrogen offers a pathway for reducing emissions in steel and fertiliser production. Developing these activities can also support jobs in manufacturing and transport.
+
+Together, renewable power, efficient consumption and cleaner industrial technologies help connect economic opportunities with less pollution and resource efficiency.
+
+PRO MAINS QUESTION 2
+
+What practical challenges must India address to make green growth resilient and inclusive?
+
+PRO MAINS ANSWER 2
+
+green growth requires affordable technologies and practical planning and coordinated investment across industries, cities and communities.
+
+Green hydrogen faces challenges of production cost, buyers, infrastructure and standards for use in steel and fertilisers. Renewable power and equipment manufacturing need investment. Efficiency measures must reach factories, buildings and homes. Water security requires treatment, reuse, efficient irrigation and groundwater recharge. A circular economy needs recovery facilities, markets for recycled materials and links with informal recyclers. Extended Producer Responsibility can support plastic and electronic-waste recovery through collection and processing. Cities need planning for transport, buildings, waste and water systems. Adaptation cannot be overlooked: early warnings and preparations for floods, heat and water shortages protect livelihoods and infrastructure. Financing links these goals to practical action. Governments, businesses and citizens need to coordinate investment, assess results and expand access. Mission LiFE adds an emphasis on responsible choices. These steps connect energy, resources and climate risks.
+
+India's transformation therefore depends on linking clean technology with resource management, climate resilience, finance and participation. Success means environmental measures that work in everyday development and remain accessible to communities.
+
+PRO MCQ 1
+
+Which city plan best supports both development and climate resilience?
+
+A. Build roads without improving water management.
+B. Focus only on planting trees.
+C. Combine transport, water management and infrastructure.
+D. Ignore existing infrastructure and services.
+
+Correct Answer: C
+
+Explanation: Integrated transport, water and infrastructure address several urban pressures together.
+
+PRO MCQ 2
+
+Which approach best supports a circular economy?
+
+A. Dispose of all discarded products.
+B. Expand recycling and producer responsibility.
+C. Increase raw-material use without monitoring waste.
+D. Separate recycling from markets for recovered materials.
+
+Correct Answer: B
+
+Explanation: Recycling and producer responsibility help recover materials and keep them in productive use.
+
+PRO MCQ 3
+
+Which initiative targets energy-intensive industries through efficiency improvements?
+
+A. PAT.
+B. Ayushman Bharat.
+C. ABHA.
+D. Ayushman Vay Vandana.
+
+Correct Answer: A
+
+Explanation: PAT addresses energy use in energy-intensive industries.
+
+PRO MCQ 4
+
+What annual green hydrogen production target is described for 2030?
+
+A. 1 million metric tonnes.
+B. 2 million metric tonnes.
+C. 10 million metric tonnes.
+D. 5 million metric tonnes.
+
+Correct Answer: D
+
+Explanation: The National Green Hydrogen Mission targets 5 million metric tonnes annually by 2030.
+
+PRO MCQ 5
+
+Which combination best reflects the climate-adaptation measures discussed?
+
+A. More waste disposal and less water monitoring.
+B. Only additional fossil-fuel production.
+C. Early warnings, resilient agriculture and water security.
+D. Removing all urban green spaces.
+
+Correct Answer: C
+
+Explanation: Early-warning systems, resilient agriculture and water security are identified adaptation priorities.
