@@ -6,6 +6,7 @@ No invented or duplicated educational content; Normal PDF is unaffected.
 from __future__ import annotations
 import json
 from pathlib import Path
+from dataclasses import replace
 from xml.sax.saxutils import escape
 from reportlab.lib.units import mm
 from reportlab.platypus import Paragraph
@@ -107,6 +108,13 @@ def _read_pro_topics():
 def generate_pro_pdf(output_path: Path, metadata: PublicationMetadata | None = None) -> Path:
     topics=_read_pro_topics()
     meta=metadata if metadata is not None else build_publication_metadata()
+    # Convert metadata to the Pro identity, even when supplied by the main runner.
+    if not meta.title.endswith(' - PRO'):
+        meta = replace(meta, title=meta.title + ' - PRO')
+    if '-PRO-' not in meta.edition_code:
+        code_parts = meta.edition_code.rsplit('-', 1)
+        if len(code_parts) == 2:
+            meta = replace(meta, edition_code=code_parts[0] + '-PRO-' + code_parts[1])
     output_path=Path(output_path)
     output_path.parent.mkdir(parents=True,exist_ok=True)
     canvas=create_canvas(str(output_path))
@@ -126,8 +134,8 @@ def generate_pro_pdf(output_path: Path, metadata: PublicationMetadata | None = N
         gs=gs.get('paper','') if isinstance(gs,dict) else gs
         _render_topic_title(canvas,layout.topic_bar,title,str(gs))
         canvas.restoreState()
-        _render_items(canvas,layout.mains_1,'MAINS 1 · 100 WORDS (10 MARKS)',_answer_items(topic['pro_mains_answers'][0]),MAINS_TEXT_SIZE)
-        _render_items(canvas,layout.mains_2,'MAINS 2 · 180 WORDS (15 MARKS)',_answer_items(topic['pro_mains_answers'][1]),MAINS_TEXT_SIZE)
+        _render_items(canvas,layout.mains_1,'MAINS QUESTION 1',_answer_items(topic['pro_mains_answers'][0]),MAINS_TEXT_SIZE)
+        _render_items(canvas,layout.mains_2,'MAINS QUESTION 2',_answer_items(topic['pro_mains_answers'][1]),MAINS_TEXT_SIZE)
         _render_items(canvas,layout.mcqs,'PRACTICE MCQs (5)',_mcq_items(topic['pro_mcqs']),MCQ_OPTION_SIZE)
         draw_footer(canvas=canvas,rect=layout.footer,data=FooterData(
             brand_name=meta.footer_brand,publication_code=meta.edition_code,

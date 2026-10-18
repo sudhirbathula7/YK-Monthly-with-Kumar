@@ -4,13 +4,13 @@ import os
 import time
 from pathlib import Path
 
-from src.config import PREVIEW_PATH
 from src.pdf.font_loader import register_fonts
 from src.pdf.pdf_generator import generate_pdf
 from src.pdf.pro_pdf_generator import generate_pro_pdf
 from src.publication import build_publication_metadata
 from src.repository.repository_manager import (
     complete_repository_and_archive,
+    build_yearly_archive_directory,
 )
 
 
@@ -47,7 +47,7 @@ def build_output_filenames(edition_code: str) -> tuple[str, str]:
     edition_id = edition_code.strip()
     if not edition_id or "/" in edition_id or chr(92) in edition_id:
         raise ValueError(f"Invalid edition code for output filename: {edition_code!r}")
-    return f"{edition_id}_pdf.pdf", f"{edition_id}_pro_pdf.pdf"
+    return f"{edition_id}.pdf", f"{edition_id}_pro.pdf"
 
 
 # ============================================================
@@ -62,11 +62,6 @@ def main() -> None:
     # Register fonts once.
     register_fonts()
 
-    PREVIEW_PATH.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
     # One metadata object for the complete run.
     metadata = (
         build_publication_metadata()
@@ -79,12 +74,14 @@ def main() -> None:
         metadata.edition_code
     )
 
+    pdf_directory = build_yearly_archive_directory(metadata)
+
     # ========================================================
     # STANDARD PDF
     # ========================================================
 
     pdf_output_file = (
-        PREVIEW_PATH
+        pdf_directory
         / standard_pdf_filename
     )
 
@@ -113,7 +110,7 @@ def main() -> None:
     # ========================================================
 
     pro_output_file = (
-        PREVIEW_PATH
+        pdf_directory
         / pro_pdf_filename
     )
 
@@ -155,44 +152,15 @@ def main() -> None:
         )
     )
 
-    archive_directory = (
-        repository_result[
-            "archive_directory"
-        ]
-    )
-
-    issue_records = (
-        repository_result[
-            "issue_records"
-        ]
-    )
-
-    statistics = (
-        repository_result[
-            "statistics"
-        ]
-    )
+    archive_directory = repository_result["archive_directory"]
+    pdf_directory = repository_result["pdf_directory"]
 
     print()
     print("=" * 60)
-    print("REPOSITORY AND ARCHIVE UPDATED")
+    print("PDFS AND SOURCE TEXT SAVED")
     print("=" * 60)
-    print(
-        f"Archive     : "
-        f"{archive_directory.resolve()}"
-    )
-    print(
-        f"Issues saved: "
-        f"{len(issue_records)}"
-    )
-    print(
-        f"Total issues: "
-        f"{statistics['total_issues']}"
-    )
-    print(
-        f"Total days  : "
-        f"{statistics['total_days']}"
-    )
+    print(f"PDF folder : {pdf_directory.resolve()}")
+    print(f"Input file : {repository_result['input_file'].resolve()}")
     print("=" * 60)
 
     # ========================================================

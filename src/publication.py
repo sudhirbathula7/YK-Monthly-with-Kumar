@@ -208,7 +208,7 @@ def _load_input_metadata() -> tuple[str, str, str]:
 # METADATA FACTORY
 # ============================================================
 
-def build_publication_metadata() -> PublicationMetadata:
+def build_publication_metadata(pro: bool = False) -> PublicationMetadata:
     """
     Create one shared metadata object from INPUT.json.
 
@@ -236,10 +236,13 @@ def build_publication_metadata() -> PublicationMetadata:
         f"{parsed_date.strftime('%y%m')}"
     )
 
+    if pro:
+        edition_code = edition_code.rsplit("-", 1)[0] + "-PRO-" + parsed_date.strftime("%y%m")
+
     return PublicationMetadata(
         project_name=PROJECT_NAME,
         project_version=PROJECT_VERSION,
-        title=f"{magazine.upper()} MONTHLY ANCHOR",
+        title=f"{magazine.upper()} MONTHLY ANCHOR" + (" - PRO" if pro else ""),
         subtitle=PUBLICATION_SUBTITLE,
         footer_brand=PUBLICATION_SUBTITLE,
         # Header displays "September 2026" rather than "01 September 2026".
