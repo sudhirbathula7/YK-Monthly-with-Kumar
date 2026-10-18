@@ -1,0 +1,95 @@
+from __future__ import annotations
+import src.branding as BRAND
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Final
+
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.units import mm
+
+
+# ============================================================
+# PROJECT
+# ============================================================
+
+PROJECT_NAME: Final[str] = BRAND.BRAND_NAME
+
+PUBLICATION_TITLE: Final[str] = BRAND.PUBLICATION_TITLE
+
+PUBLICATION_SUBTITLE: Final[str] = BRAND.PUBLICATION_SUBTITLE
+
+PROJECT_VERSION: Final[str] = "1.1"
+
+DEBUG: Final[bool] = True
+
+# ============================================================
+# FILES
+# ============================================================
+
+INPUT_FILENAME: Final[str] = "INPUT.json"
+
+OUTPUT_FOLDER: Final[str] = "output"
+
+PREVIEW_FOLDER: Final[str] = "output/previews"
+
+PREVIEW_FILENAME: Final[str] = "header_preview.pdf"
+
+
+# ============================================================
+# ROOT PATHS
+# ============================================================
+
+PROJECT_ROOT: Final[Path] = Path(__file__).resolve().parent.parent
+
+INPUT_PATH: Final[Path] = PROJECT_ROOT / INPUT_FILENAME
+
+OUTPUT_PATH: Final[Path] = PROJECT_ROOT / OUTPUT_FOLDER
+
+PREVIEW_PATH: Final[Path] = (
+    PROJECT_ROOT
+    / PREVIEW_FOLDER
+)
+
+
+# ============================================================
+# PAGE
+# ============================================================
+
+PAGE_WIDTH: Final[float] = A4[0]
+
+PAGE_HEIGHT: Final[float] = A4[1]
+
+PAGE_MARGIN_LEFT: Final[float] = 11 * mm
+
+PAGE_MARGIN_RIGHT: Final[float] = 11 * mm
+
+PAGE_MARGIN_TOP: Final[float] = 6 * mm
+
+PAGE_MARGIN_BOTTOM: Final[float] = 6 * mm
+
+
+CONTENT_WIDTH: Final[float] = (
+    PAGE_WIDTH
+    - PAGE_MARGIN_LEFT
+    - PAGE_MARGIN_RIGHT
+)
+
+CONTENT_HEIGHT: Final[float] = (
+    PAGE_HEIGHT
+    - PAGE_MARGIN_TOP
+    - PAGE_MARGIN_BOTTOM
+)
+
+
+# ============================================================
+# CONTENT COUNTS
+# ============================================================
+
+KNOWLEDGE_POINT_COUNT: Final[int] = 5
+
+# Recall Anchors remain internal highlighting terms.
+# They are no longer displayed in the Curiosity box.
+RECALL_ANCHOR_COUNT: Final[int] = 5
+
+# Five independent Quick Facts are required per topic.
+QUICK_FACT_COUNT: Final[int] = 5
